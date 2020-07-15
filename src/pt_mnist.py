@@ -55,13 +55,7 @@ def accuracy(model, test_loader, batch_size):
         for batch_x, batch_y in test_loader:
             pred_batch = model(batch_x)
             pred_batch = pred_batch.argmax(dim=1, keepdim=True)
-            # print(pred_batch)
-            # print()
-            # print(batch_y)
             correct += pred_batch.eq(batch_y.view_as(pred_batch)).sum().item()
-            # print(correct)
-            # import sys
-            # sys.exit()
 
     return correct / (len(test_loader) * batch_size)
 
