@@ -1,6 +1,6 @@
 # A Machine Learning Framework Comparison
 
-This repository is the companion code to my blog post [**Flux: The Flexible Machine Learning Framework for Julia**](link), where I discuss using Flux as a framework for machine learning in Julia. This takes the form of presenting side-by-side comparisons between the Keras Functional API, PyTorch, and two Flux implementations. See the `src` directory for the full scripts.
+This repository is the companion code to my blog post [**Flux: The Flexible Machine Learning Framework for Julia**](https://alecokas.github.io/julia/flux/2020/07/09/flux-flexible-ml-for-julia.html), where I discuss using Flux as a framework for machine learning in Julia. This takes the form of presenting side-by-side comparisons between the Keras Functional API, PyTorch, and two Flux implementations. See the `src` directory for the full scripts.
 
 ## Training
 The four scripts can be run as follows:
