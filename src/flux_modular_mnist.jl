@@ -32,7 +32,9 @@ struct FFNetwork
     fc_1
     dropout
     fc_2
-    FFNetwork(input_dim::Int, hidden_dim::Int, dropout_ratio::Float32, num_classes::Int) = new(
+    FFNetwork(
+        input_dim::Int, hidden_dim::Int, dropout_ratio::Float32, num_classes::Int
+    ) = new(
         Dense(input_dim, hidden_dim, relu),
         Dropout(dropout_ratio),
         Dense(hidden_dim, num_classes),
